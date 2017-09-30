@@ -1,0 +1,45 @@
+body {
+    font-family: segoe UI, Open Sans,Microsoft YaHei,STHeiti;
+}
+.users-box {
+    width: 500px;
+    margin-top: 20px;
+}
+.users-box .suggestion {
+    list-style: none;
+    border: #ccc solid 1px;
+    border-radius: 5px;
+    margin: 0;
+    padding: 0;
+}
+.users-box .suggestion li {
+    border-bottom: #ccc solid 1px;
+    padding: 5px 10px;
+    height: 50px;
+}
+.users-box .suggestion li:last-child {
+    border-bottom: 0;
+}
+.users-box .avatar {
+    width: 50px;
+    float: left;
+    margin-right: 10px;
+}
+.users-box .avatar img {
+    width: 100%;
+}
+.users-box .username {
+    float: left;
+    font-size: 30px;
+    line-height: 45px;
+    color: #333;
+    text-decoration: none;
+}
+.users-box .close {
+    float: right;
+    line-height: 1;
+    vertical-align: top;
+    text-decoration: none;
+    font-size: 36px;
+    color: #ccc;
+}

@@ -15,6 +15,9 @@ app.get('/', (req, res) => {
 app.get("/methods", (req, res) => {
     res.render("methods");
 });
+app.get("/bmi", (req, res) => {
+    res.render("bmi");
+});
 
 app.listen(port, (err) => {
     console.log(`Server is running on port ${port}`);

@@ -19,16 +19,15 @@ let responseStream = requestStream.flatMap(url => {
 
 let suggestion1Stream = responseStream.map((listUsers) => {
     return listUsers[Math.floor(Math.random() * listUsers.length)];
-})
-.merge(refreshClickStream.map( () => null)).startWith(null);
+}).merge(refreshClickStream.map( () => null)).startWith(null);
 
 let suggestion2Stream = responseStream.map((listUsers) => {
     return listUsers[Math.floor(Math.random() * listUsers.length)];
-});
+}).merge(refreshClickStream.map( () => null)).startWith(null);
 
 let suggestion3Stream = responseStream.map((listUsers) => {
     return listUsers[Math.floor(Math.random() * listUsers.length)];
-});
+}).merge(refreshClickStream.map( () => null)).startWith(null);
 
 let renderSuggestion = (suggestedUser, selector) => {
     let $suggestionSelector = $(selector);
